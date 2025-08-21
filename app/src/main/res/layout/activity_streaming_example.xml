@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroundDarkColor"
+    tools:context=".StreamingActivity">
+
+    <com.devbrackets.android.exomedia.ui.widget.VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+         />
+
+
+    <ProgressBar
+        android:id="@+id/pb_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input_background"
+        android:ems="10"
+        android:fontFamily="@font/poppins_med"
+        android:hint="@string/url_hint"
+        android:inputType="textUri"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/btn_clear_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_clear_input"
+        android:fontFamily="@font/poppins_med"
+        android:text="@string/clear_input"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+       />
+    <Button
+        android:id="@+id/btn_start_streaming"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_button_background"
+        android:fontFamily="@font/poppins_med"
+        android:text="@string/btn_start_stream"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        />
+
+
+
+
+
+</LinearLayout>
